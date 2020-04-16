@@ -24,7 +24,7 @@ create table employee (
     last_name varchar(30) not null,
     role_id int not null,
     manager_id int,
-    primary key(id)
+    primary key(id),
     foreign key(role_id)
     references role(id)
     on delete cascade
@@ -44,4 +44,11 @@ insert into role (title, salary, dept_id) values ("Sales Representitives", "4000
 insert into role (title, salary, dept_id) values ("Junior Developer", "30000", "4");
 insert into role (title, salary, dept_id) values ("Code Checker", "30000", "4");
 
-insert into employee (first_name, last_name, role_id) values ("Chance", "Wright", "1")
+insert into employee (first_name, last_name, role_id) values ("Chance", "Wright", "1");
+insert into employee (first_name, last_name, role_id, manager_id) values ("Tamara", "Sidorova", "2", "1");
+insert into employee (first_name, last_name, role_id, manager_id) values ("Page", "Hunt", "3", "2");
+insert into employee (first_name, last_name, role_id, manager_id) values ("Niki", "Jones", "4", "2");
+insert into employee (first_name, last_name, role_id, manager_id) values ("Brandon", "Formby", "5", "3");
+insert into employee (first_name, last_name, role_id, manager_id) values ("Andrew", "Weathers", "6", "3",);
+insert into employee (first_name, last_name, role_id, manager_id) values ("Keanu", "Reeves", "7", "4",);
+insert into employee (first_name, last_name, role_id, manager_id) values ("Cosmic", "Charlie", "8", "4",);
