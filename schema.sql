@@ -16,4 +16,16 @@ create table role (
     foreign key(dept_id),
     references department(id),
     on delete cascade
-);z
+);
+
+create table employee (
+    id int auto_increment,
+    first_name varchar(30) not null,
+    last_name varchar(30) not null,
+    role_id int not null,
+    manager_id int,
+    primary key(id)
+    foreign key(role_id)
+    references role(id)
+    on delete cascade
+);
