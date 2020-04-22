@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/cwright489/EmployeeManager/issues"
   },
-  "homepage": "https://github.com/cwright489/EmployeeManager#readme"
+  "homepage": "https://github.com/cwright489/EmployeeManager#readme",
+  "dependencies": {
+    "asciiart-logo": "^0.2.6",
+    "console.table": "^0.10.0",
+    "inquirer": "^7.1.0",
+    "mysql": "^2.18.1",
+    "util": "^0.12.2"
+  }
 }
